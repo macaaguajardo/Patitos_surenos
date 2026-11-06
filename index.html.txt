@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitos Sureños | Frutillar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Hoja de Estilos CSS Externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased">
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-yellow-500 text-slate-900 p-2 rounded-xl font-extrabold text-xl shadow-lg">
+                    🐥
+                </div>
+                <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                    Patitos Sureños
+                </span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm">
+                <a href="#inicio" class="hover:text-yellow-400 transition">Inicio</a>
+                <a href="#historia" class="hover:text-yellow-400 transition">Historia y Contexto</a>
+                <a href="#galeria" class="hover:text-yellow-400 transition">Galería Visual</a>
+                <a href="#minijuego" class="hover:text-yellow-400 transition font-bold text-yellow-400">🎮 Minijuego</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PORTADA CON VIDEO DE FONDO -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Video de Fondo (Cloudflare R2) -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://pub-33c103b8d20b4bb89b2582eebcdfd9f8.r2.dev/video-ejercicios/guajardo-munoz.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <!-- Capa oscura superpuesta -->
+        <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-[2px]"></div>
+
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4 space-y-6">
+            <span class="bg-yellow-500/20 border border-yellow-500/40 text-yellow-300 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest inline-block">
+                Lago Llanquihue • Frutillar
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                Tradición, Naturaleza y <span class="text-yellow-400">Sostenibilidad</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-light">
+                Explora la historia del aniversario 170 de Frutillar[cite: 1], el debate ecológico en torno al evento de los patitos de hule[cite: 1] y su inspiradora transformación hacia alternativas comunitarias[cite: 1].
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#minijuego" class="bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-xl transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-gamepad mr-2"></i> Jugar con Tarjetas
+                </a>
+                <a href="#historia" class="bg-slate-800/80 hover:bg-slate-700 border border-slate-700 font-semibold px-8 py-4 rounded-xl backdrop-blur transition">
+                    Leer la Historia <i class="fa-solid fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE TEXTOS / HISTORIA -->
+    <section id="historia" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Crónica de una Celebración Transformada</h2>
+            <p class="text-slate-400">Basado en los hechos oficiales del municipio de Frutillar y su comunidad[cite: 1].</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Tarjeta 1 -->
+            <div class="bg-slate-800/50 border border-slate-700/60 rounded-2xl p-8 backdrop-blur hover:border-yellow-500/50 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-yellow-500/10 text-yellow-400 rounded-xl flex items-center justify-center text-xl font-bold mb-6">01</div>
+                    <h3 class="text-xl font-bold mb-4 text-yellow-400">Ubicación y Contexto Histórico</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        La historia reciente de Frutillar (Región de Los Lagos) está ligada al turismo y la conservación[cite: 1]. La ciudad se preparaba para conmemorar su aniversario número 170 con un evento masivo en el icónico lago Llanquihue y su costanera[cite: 1].
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="bg-slate-800/50 border border-slate-700/60 rounded-2xl p-8 backdrop-blur hover:border-yellow-500/50 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-yellow-500/10 text-yellow-400 rounded-xl flex items-center justify-center text-xl font-bold mb-6">02</div>
+                    <h3 class="text-xl font-bold mb-4 text-yellow-400">Reacciones y Consecuencias</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Se planeaba soltar 10.000 patitos flotantes[cite: 1]. Agrupaciones animalistas advirtieron sobre contaminación por microplásticos[cite: 1]. Ante la presión ciudadana, el alcalde Javier Arismendi canceló formalmente la competencia acuática[cite: 1].
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="bg-slate-800/50 border border-slate-700/60 rounded-2xl p-8 backdrop-blur hover:border-yellow-500/50 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-yellow-500/10 text-yellow-400 rounded-xl flex items-center justify-center text-xl font-bold mb-6">03</div>
+                    <h3 class="text-xl font-bold mb-4 text-yellow-400">Sustitución y Alternativas</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Para no perder el fin benéfico, se organizó una corrida familiar pedestre y una rifa solidaria[cite: 1]. Frutillar transformó una crisis ambiental en una oportunidad de sostenibilidad[cite: 1].
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA CON TRANSICIONES IMPACTANTES -->
+    <section id="galeria" class="py-20 bg-slate-950/50 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Paisajes del Lago Llanquihue</h2>
+            <p class="text-slate-400 mb-10">Imágenes del entorno natural y los emblemáticos patitos de hule[cite: 2, 3, 4, 5].</p>
+
+            <div class="relative h-[450px] sm:h-[550px] rounded-2xl overflow-hidden shadow-2xl bg-slate-900 border border-slate-800">
+                <!-- Las 4 imágenes adjuntas -->
+                <img src="Foto 1.jpg" alt="Foto 1 Patitos Frutillar" class="slider-image active">
+                <img src="Foto 2.jpg" alt="Foto 2 Patitos Frutillar" class="slider-image">
+                <img src="Foto 3.jpg" alt="Foto 3 Patitos Frutillar" class="slider-image">
+                <img src="Foto 4.jpg" alt="Foto 4 Patitos Frutillar" class="slider-image">
+
+                <!-- Controles de galería -->
+                <div class="absolute inset-0 flex items-center justify-between p-4 z-20 pointer-events-none">
+                    <button onclick="prevSlide()" class="pointer-events-auto bg-slate-900/80 hover:bg-yellow-500 hover:text-slate-950 text-white w-12 h-12 rounded-full flex items-center justify-center backdrop-blur transition shadow-lg cursor-pointer">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button onclick="nextSlide()" class="pointer-events-auto bg-slate-900/80 hover:bg-yellow-500 hover:text-slate-950 text-white w-12 h-12 rounded-full flex items-center justify-center backdrop-blur transition shadow-lg cursor-pointer">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Indicadores -->
+                <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2 z-20">
+                    <span class="dot w-3 h-3 rounded-full bg-yellow-400 cursor-pointer transition" onclick="currentSlide(0)"></span>
+                    <span class="dot w-3 h-3 rounded-full bg-slate-600 cursor-pointer transition" onclick="currentSlide(1)"></span>
+                    <span class="dot w-3 h-3 rounded-full bg-slate-600 cursor-pointer transition" onclick="currentSlide(2)"></span>
+                    <span class="dot w-3 h-3 rounded-full bg-slate-600 cursor-pointer transition" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MINIJUEGO DE TARJETAS -->
+    <section id="minijuego" class="py-24 max-w-4xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <span class="bg-yellow-500/20 text-yellow-400 text-xs font-bold px-3 py-1 rounded-full uppercase">Trivia Interactiva</span>
+            <h2 class="text-3xl sm:text-4xl font-bold mt-3">Desafío: ¿Cuánto sabes de Patitos Sureños?</h2>
+            <p class="text-slate-400 mt-2">Pon a prueba tu comprensión sobre la noticia de Frutillar[cite: 1].</p>
+        </div>
+
+        <div id="game-container" class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl backdrop-blur">
+            <div id="quiz-box">
+                <div class="flex justify-between items-center mb-6 text-sm text-slate-400">
+                    <span id="question-progress">Pregunta 1 de 3</span>
+                    <span id="score-counter" class="text-yellow-400 font-bold">Puntaje: 0</span>
+                </div>
+                <h3 id="question-text" class="text-xl sm:text-2xl font-bold mb-6 text-slate-100">Cargando pregunta...</h3>
+                <div id="options-container" class="grid grid-cols-1 gap-4">
+                    <!-- Opciones generadas por JS -->
+                </div>
+            </div>
+            
+            <div id="result-box" class="hidden text-center py-8 space-y-6">
+                <div class="w-20 h-20 bg-yellow-500/20 text-yellow-400 rounded-full flex items-center justify-center text-3xl mx-auto">
+                    🏆
+                </div>
+                <h3 class="text-3xl font-bold">¡Juego Completado!</h3>
+                <p id="final-score-text" class="text-lg text-slate-300">Has respondido correctamente todas las preguntas.</p>
+                <button onclick="restartGame()" class="bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-bold px-8 py-3 rounded-xl transition cursor-pointer">
+                    Volver a Jugar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-8 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Patitos Sureños • Creado para GitHub Pages.</p>
+    </footer>
+
+    <!-- Archivo JS Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
